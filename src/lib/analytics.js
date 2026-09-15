@@ -1,0 +1,16 @@
+// Wrapper fino em volta do gtag (Google Analytics 4). Não quebra nada se o
+// gtag ainda não tiver carregado (ex.: rodando localmente sem internet).
+
+export function trackPageView(path, title) {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  window.gtag('event', 'page_view', {
+    page_path: path,
+    page_title: title,
+    page_location: window.location.href,
+  });
+}
+
+export function trackEvent(name, params = {}) {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  window.gtag('event', name, params);
+}
