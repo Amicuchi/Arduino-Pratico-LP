@@ -4,73 +4,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Ícones / PWA -->
+    <!-- Ícones e PWA -->
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <link rel="apple-touch-icon" href="/images/icon-192.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- Open Graph (WhatsApp, Facebook, LinkedIn...) -->
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Arduino Prático" />
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:image" content="https://www.arduinopratico.com.br/images/hero-capa_whats.png" />
+    <meta
+      property="og:image"
+      content="https://www.arduinopratico.com.br/images/hero-capa_whats.png"
+    />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://www.arduinopratico.com.br/images/hero-capa.png" />
+    <meta
+      name="twitter:image"
+      content="https://www.arduinopratico.com.br/images/hero-capa.png"
+    />
 
     <!-- Schema.org: FAQPage — habilita o rich snippet de perguntas expansíveis no Google -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Preciso ter o Arduino para usar o ebook?", "acceptedAnswer": { "@type": "Answer", "text": "Não! O ebook ensina a usar simuladores online como o Tinkercad, então você pode começar a aprender e praticar mesmo sem ter a placa física. Quando decidir comprar, você já vai saber exatamente o que está fazendo." } },
-        { "@type": "Question", "name": "O ebook é físico ou digital?", "acceptedAnswer": { "@type": "Answer", "text": "É um Ebook em PDF, entregue imediatamente no seu e-mail após a confirmação do pagamento. Você pode ler no computador, tablet ou celular, e imprimir se preferir." } },
-        { "@type": "Question", "name": "Serve para crianças?", "acceptedAnswer": { "@type": "Answer", "text": "Sim! Com supervisão de um adulto, é uma ótima atividade de pai/mãe e filho(a). O conteúdo foi originalmente criado para ensinar uma criança de 6 anos, então a linguagem é bem acessível." } },
-        { "@type": "Question", "name": "Recebo só um ebook ou mais de um?", "acceptedAnswer": { "@type": "Answer", "text": "Você recebe os 4 e-books do pacote: o Eletrônica Básica com Arduino (o principal) e mais 3 bônus — 19 Componentes Essenciais, Guia Completo do 555 e Do L298N ao IBT-2 (drivers de motor DC). Todos ficam disponíveis na sua área de membros assim que a compra é aprovada, sem custo extra." } },
-        { "@type": "Question", "name": "Preciso saber programar?", "acceptedAnswer": { "@type": "Answer", "text": "Não! O ebook começa do zero absoluto. Você vai aprender os fundamentos de programação junto com a eletrônica, de forma prática e sem complicação." } },
-        { "@type": "Question", "name": "Qual a diferença desse ebook para tutoriais gratuitos?", "acceptedAnswer": { "@type": "Answer", "text": "A principal diferença é a organização e didática. Tutoriais gratuitos são fragmentados e muitas vezes pulam conceitos importantes de segurança. Aqui você tem um caminho estruturado, do básico ao avançado, com foco em não queimar componentes." } },
-        { "@type": "Question", "name": "E se eu não gostar do material?", "acceptedAnswer": { "@type": "Answer", "text": "Você tem 7 dias de garantia incondicional. Se por qualquer motivo você não ficar satisfeito, basta solicitar o reembolso e devolvemos 100% do seu dinheiro, sem perguntas." } },
-        { "@type": "Question", "name": "Posso imprimir meu ebook para usar fisicamente?", "acceptedAnswer": { "@type": "Answer", "text": "Sim! O ebook foi desenvolvido pensando também em quem prefere estudar com material impresso. Você pode imprimir o PDF e criar sua própria versão física do livro." } },
-        { "@type": "Question", "name": "Como recebo o material?", "acceptedAnswer": { "@type": "Answer", "text": "Imediatamente após a confirmação do pagamento, você recebe um e-mail com o link para download do ebook e do pack de códigos bônus. PIX e cartão são aprovados na hora!" } },
-        { "@type": "Question", "name": "Posso tirar dúvidas com o autor?", "acceptedAnswer": { "@type": "Answer", "text": "Sim! Você terá acesso a um canal de suporte para tirar suas dúvidas sobre o conteúdo do ebook." } }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Preciso ter o Arduino para usar o ebook?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não! O ebook ensina a usar simuladores online como o Tinkercad, então você pode começar a aprender e praticar mesmo sem ter a placa física. Quando decidir comprar, você já vai saber exatamente o que está fazendo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O ebook é físico ou digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "É um Ebook em PDF, entregue imediatamente no seu e-mail após a confirmação do pagamento. Você pode ler no computador, tablet ou celular, e imprimir se preferir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Serve para crianças?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Com supervisão de um adulto, é uma ótima atividade de pai e filho. O conteúdo foi originalmente criado para ensinar uma criança de 6 anos, então a linguagem é bem acessível."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Recebo só um ebook ou mais de um?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Você recebe os 4 e-books do pacote: o Eletrônica Básica com Arduino e mais 3 bônus: 19 Componentes Essenciais, Guia Completo do 555 e Do L298N ao IBT-2 (drivers de motor DC). Todos ficam disponíveis na sua área de membros assim que a compra é aprovada, sem custo extra."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Preciso saber programar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não! O ebook começa do zero absoluto. Você vai aprender os fundamentos de programação junto com a eletrônica, de forma prática e sem complicação."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual a diferença desse ebook para tutoriais gratuitos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A principal diferença é a organização e didática. Tutoriais gratuitos são fragmentados e muitas vezes pulam conceitos importantes de segurança. Aqui você tem um caminho estruturado, do básico ao avançado, com foco em não queimar componentes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "E se eu não gostar do material?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Você tem 7 dias de garantia incondicional. Se por qualquer motivo você não ficar satisfeito, basta solicitar o reembolso e devolvemos 100% do seu dinheiro, sem perguntas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso imprimir meu ebook para usar fisicamente?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! O ebook foi desenvolvido pensando também em quem prefere estudar com material impresso. Você pode imprimir o PDF e criar sua própria versão física do livro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como recebo o material?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Imediatamente após a confirmação do pagamento, você recebe um e-mail com o link para download do ebook e do pack de códigos bônus. PIX e cartão são aprovados na hora!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso tirar dúvidas com o autor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Você terá acesso a um canal de suporte para tirar suas dúvidas sobre o conteúdo do ebook."
+            }
+          }
+        ]
+      }
     </script>
 
     <!-- Schema.org: Product — descreve o ebook para o Google -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Eletrônica Básica com Arduino",
-      "description": "Ebook completo (+80 páginas) para aprender Eletrônica do zero com Arduino, com 10 projetos práticos, capítulo de segurança e 3 ebooks bônus inclusos.",
-      "image": "https://www.arduinopratico.com.br/images/capa-ebook-principal.png",
-      "brand": { "@type": "Person", "name": "Anderson Amicuchi" },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://pay.hotmart.com/R103911345A",
-        "priceCurrency": "BRL",
-        "price": "19.90",
-        "availability": "https://schema.org/InStock"
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+      "@id": "https://www.arduinopratico.com.br/#product-eletronica-basica-arduino",
+        "name": "Eletrônica Básica com Arduino",
+        "description": "Ebook completo (+80 páginas) para aprender Eletrônica do zero com Arduino, com 10 projetos práticos, capítulo de segurança e 3 ebooks bônus inclusos.",
+        "image": "https://www.arduinopratico.com.br/images/capa-ebook-principal.png",
+        "brand": { "@type": "Brand", "name": "Arduino Prático" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://pay.hotmart.com/R103911345A",
+          "priceCurrency": "BRL",
+          "price": "19.90",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "BR",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "BRL"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "BR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
+            }
+          }
+        }
       }
-    }
     </script>
 
     <!-- Google tag (gtag.js) — GA4 (navegação/funil) + Google Ads (remarketing) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-416CGR86JE"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-416CGR86JE"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
       // send_page_view: false porque este é um app de página única (SPA) —
       // quem envia o page_view a cada troca de rota é o PageViewTracker
       // (src/lib/PageViewTracker.jsx), senão o GA4 só veria a 1ª página.
-      gtag('config', 'G-416CGR86JE', { send_page_view: false });
-      gtag('config', 'AW-18265777984');
+      gtag("config", "G-416CGR86JE", { send_page_view: false });
+      gtag("config", "AW-18265777984");
 
       // O evento de CONVERSÃO (compra) não é mais disparado aqui.
       // Como o pagamento acontece inteiramente no domínio da Hotmart, este
