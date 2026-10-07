@@ -12,10 +12,7 @@ export default function TermosDeUso() {
           name="description"
           content="Termos de Uso do Arduino Prático: regras de uso do site, do ebook e dos bônus inclusos na compra."
         />
-        <link
-          rel="canonical"
-          href="https://www.arduinopratico.com.br/TermosDeUso"
-        />
+        <link rel="canonical" href="https://www.arduinopratico.com.br/TermosDeUso" />
       </Head>
 
       <PageLayout>
