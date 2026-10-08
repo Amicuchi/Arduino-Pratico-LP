@@ -12,7 +12,7 @@ export default function PoliticaReembolso() {
           name="description"
           content="Garantia incondicional de 7 dias: se não gostar do ebook Eletrônica Básica com Arduino, devolvemos 100% do seu dinheiro."
         />
-        <link rel="canonical" href="https://www.arduinopratico.com.br/PoliticaReembolso" />
+        <link rel="canonical" href="https://www.arduinopratico.com.br/politica-reembolso" />
       </Head>
 
       <PageLayout>

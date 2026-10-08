@@ -62,30 +62,30 @@ export default function Footer() {
 
         {/* Legal Links */}
         <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-white">
-          <a href="/About" className="hover:text-cyan-400 transition-colors">
+          <a href="/about" className="hover:text-cyan-400 transition-colors">
             Sobre
           </a>
           <span>•</span>
-          <a href="/Contact" className="hover:text-cyan-400 transition-colors">
+          <a href="/contact" className="hover:text-cyan-400 transition-colors">
             Contato
           </a>
           <span>•</span>
           <a
-            href="/TermosDeUso"
+            href="/termos-de-uso"
             className="hover:text-cyan-400 transition-colors"
           >
             Termos de Uso
           </a>
           <span>•</span>
           <a
-            href="/PoliticaPrivacidade"
+            href="/politica-privacidade"
             className="hover:text-cyan-400 transition-colors"
           >
             Política de Privacidade
           </a>
           <span>•</span>
           <a
-            href="/PoliticaReembolso"
+            href="/politica-reembolso"
             className="hover:text-cyan-400 transition-colors"
           >
             Política de Reembolso

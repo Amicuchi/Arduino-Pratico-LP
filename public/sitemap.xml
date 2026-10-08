@@ -6,27 +6,27 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.arduinopratico.com.br/About</loc>
+    <loc>https://www.arduinopratico.com.br/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.arduinopratico.com.br/Contact</loc>
+    <loc>https://www.arduinopratico.com.br/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.arduinopratico.com.br/PoliticaPrivacidade</loc>
+    <loc>https://www.arduinopratico.com.br/politica-privacidade</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.arduinopratico.com.br/PoliticaReembolso</loc>
+    <loc>https://www.arduinopratico.com.br/politica-reembolso</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.arduinopratico.com.br/TermosDeUso</loc>
+    <loc>https://www.arduinopratico.com.br/termos-de-uso</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

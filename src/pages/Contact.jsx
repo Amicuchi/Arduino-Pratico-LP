@@ -37,10 +37,10 @@ export default function Contact() {
       <Head>
         <title>Contato | Arduino Prático</title>
         <meta name="description" content="Tire suas dúvidas sobre o ebook Eletrônica Básica com Arduino. Fale direto com o autor por e-mail ou pelo formulário de contato." />
-        <link rel="canonical" href="https://www.arduinopratico.com.br/Contact" />
+        <link rel="canonical" href="https://www.arduinopratico.com.br/contact" />
         <meta property="og:title" content="Contato | Arduino Prático" />
         <meta property="og:description" content="Tire suas dúvidas sobre o ebook Eletrônica Básica com Arduino." />
-        <meta property="og:url" content="https://www.arduinopratico.com.br/Contact" />
+        <meta property="og:url" content="https://www.arduinopratico.com.br/contact" />
       </Head>
 
     <PageLayout>

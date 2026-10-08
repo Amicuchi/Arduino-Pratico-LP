@@ -11,9 +11,8 @@ import PoliticaPrivacidade from './pages/PoliticaPrivacidade';
 import TermosDeUso from './pages/TermosDeUso';
 import PoliticaReembolso from './pages/PoliticaReembolso';
 
-// Este arquivo exporta "routes" (config, não componente) por exigência do
-// vite-react-ssg; por isso o Fast Refresh sempre recarrega a página inteira
-// aqui — é esperado.
+// Este arquivo exporta "routes" (config, não componente) por exigência do vite-react-ssg; 
+// por isso o Fast Refresh sempre recarrega a página inteira aqui — é esperado.
 // eslint-disable-next-line react-refresh/only-export-components
 function RootLayout() {
   return (
@@ -33,11 +32,11 @@ export const routes = [
     Component: RootLayout,
     children: [
       { index: true, Component: Home },
-      { path: 'About', Component: About },
-      { path: 'Contact', Component: Contact },
-      { path: 'PoliticaPrivacidade', Component: PoliticaPrivacidade },
-      { path: 'TermosDeUso', Component: TermosDeUso },
-      { path: 'PoliticaReembolso', Component: PoliticaReembolso },
+      { path: 'about', Component: About },
+      { path: 'contact', Component: Contact },
+      { path: 'politica-privacidade', Component: PoliticaPrivacidade },
+      { path: 'termos-de-uso', Component: TermosDeUso },
+      { path: 'politica-reembolso', Component: PoliticaReembolso },
       { path: '*', Component: PageNotFound },
     ],
   },

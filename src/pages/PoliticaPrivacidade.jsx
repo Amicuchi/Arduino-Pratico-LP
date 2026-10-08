@@ -14,7 +14,7 @@ export default function PoliticaPrivacidade() {
         />
         <link
           rel="canonical"
-          href="https://www.arduinopratico.com.br/PoliticaPrivacidade"
+          href="https://www.arduinopratico.com.br/politica-privacidade"
         />
       </Head>
 

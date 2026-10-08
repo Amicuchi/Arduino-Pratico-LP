@@ -13,7 +13,7 @@ export default function About() {
           name="description"
           content="Conheça o Arduino Prático: um pacote de 4 ebooks (+200 páginas) para aprender eletrônica e Arduino do zero, escrito por Anderson Amicuchi."
         />
-        <link rel="canonical" href="https://www.arduinopratico.com.br/About" />
+        <link rel="canonical" href="https://www.arduinopratico.com.br/about" />
         <meta property="og:title" content="Sobre o Arduino Prático" />
         <meta
           property="og:description"
@@ -21,7 +21,7 @@ export default function About() {
         />
         <meta
           property="og:url"
-          content="https://www.arduinopratico.com.br/About"
+          content="https://www.arduinopratico.com.br/about"
         />
       </Head>
 
